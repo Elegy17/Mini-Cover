@@ -2,6 +2,7 @@ const fonts = [
     [import.meta.env.VITE_APP_FONT_FAMILY, '默认全局'],
     ['Microsoft YaHei', '微软雅黑'],
     // [字体名称, 显示名称, CSS文件地址]
+    ['LXGW WenKai', '霞鹜文楷', 'https://cdn.smartcis.cn/gh/Elegy17/Sharding-fonts@main/LXGW-WenKai/LXGW-WenKai-Regular/result.css'],
     ['HarmonyOS_Regular', '鸿蒙字体', 'https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css'],
     ['yozai', '悠哉字体', 'https://chinese-fonts-cdn.deno.dev/packages/yozai/dist/Yozai-Regular/result.css'],
     ['寒蝉全圆体', '寒蝉全圆体', 'https://chinese-fonts-cdn.deno.dev/packages/hcqyt/dist/ChillRoundFRegular/result.css'],
@@ -10,8 +11,8 @@ const fonts = [
 ];
 
 export const defaultConfig = {
-    text: '梦爱吃鱼',       // 默认文本
-    watermark: '@梦爱吃鱼', // 默认水印
+    text: 'Xeran',       // 默认文本
+    watermark: '@星然♚', // 默认水印
     fontFamily: import.meta.env.VITE_APP_FONT_FAMILY,
     fontStyles: fonts.map(f => f[2]).filter(Boolean),
     fontOptions: fonts.map(([value, label]) => ({ value, label }))
